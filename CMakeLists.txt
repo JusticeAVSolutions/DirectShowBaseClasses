@@ -73,3 +73,7 @@ file(GLOB BASECLASSES_SOURCE_FILES
 
 source_group(BaseClasses\\Header_Files FILES  ${BASECLASSES_HEADER_FILES})
 source_group(BaseClasses\\Source_Files FILES  ${BASECLASSES_SOURCE_FILES})
+
+add_library(BaseClasses STATIC
+            ${BASECLASSES_HEADER_FILES}
+            ${BASECLASSES_SOURCE_FILES})
